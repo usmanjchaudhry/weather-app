@@ -32,7 +32,7 @@ app.get('',(req, res)=>{
     res.render('index',{
         title:"Weather app",
         name: 'Usman',
-        footer:"Footer"
+        footer:"Made with ❤️ by Usman Chaudhry"
 
     })
 })
@@ -71,14 +71,14 @@ app.get('/about',(req, res)=>{
     res.render('about',{
         title:"About Me",
         name: 'Usman',
-        footer:"Footer"
+        footer:"Made with ❤️ by Usman Chaudhry"
     })
 })
 
 app.get('/help',(req, res)=>{
     res.render('help',{
 title:"Help page",
-footer:"Footer",
+footer:"Made with ❤️ by Usman Chaudhry",
 message:'Help page'
 
     })
@@ -96,7 +96,7 @@ app.get('/render',(req,res)=>{
 app.get('/help/*',(req,res)=>{
     res.render('404',{
         title:"404 page",
-        footer:"Footer",
+        footer:"Made with ❤️ by Usman Chaudhry",
         errorMessage:'Help Article not found'
 
     })
@@ -106,7 +106,7 @@ app.get('/help/*',(req,res)=>{
 app.get('*',(req,res)=>{
     res.render('404',{
         title:"404 page",
-        footer:"Footer",
+        footer:"Made with ❤️ by Usman Chaudhry",
         errorMessage:'Error Page not found'
 
     })

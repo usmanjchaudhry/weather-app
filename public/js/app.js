@@ -40,7 +40,7 @@ weatherForm.addEventListener('submit',(e)=>{
         }else{
             messageOne.textContent= "In " + data.location  
             messageTwo.textContent= "it is currently "+ data.forecast.feelslike+" degrees farenheit."
-            messageThree.textContent="THe weather is "+data.forecast.weather_descriptions[0]
+            messageThree.textContent="Weather description: "+data.forecast.weather_descriptions[0]
             console.log(data)  
         } 
 })

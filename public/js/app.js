@@ -19,7 +19,7 @@ const messageFive = document.querySelector('#message-5')
 
 
 
-messageOne.textContent = 'From Javascript'
+messageOne.textContent = ''
 
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault()
@@ -38,9 +38,9 @@ weatherForm.addEventListener('submit',(e)=>{
         if(data.error){
             messageOne.textContent= 'Please enter a location.'
         }else{
-            messageOne.textContent= data.location  
-            messageTwo.textContent= data.forecast.feelslike
-            messageThree.textContent=data.forecast.weather_descriptions[0]
+            messageOne.textContent= "In " + data.location  
+            messageTwo.textContent= "it is currently "+ data.forecast.feelslike+" degrees farenheit."
+            messageThree.textContent="THe weather is "+data.forecast.weather_descriptions[0]
             console.log(data)  
         } 
 })
